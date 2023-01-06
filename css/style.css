@@ -41,13 +41,54 @@ body {
   text-align: center;
   color: blue;
 }
-.x-o .game-container .game-over {
+.x-o .game-container .finis {
+  height: 3px;
+  width: 435px;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 49%;
+}
+.x-o .game-container .finis .game-over {
   position: absolute;
   height: 3px;
   width: 435px;
   background: #ff0047;
-  transform: rotate(90deg);
   top: 49%;
+  -webkit-animation: animateThis 0.3s ease-in;
+          animation: animateThis 0.3s ease-in;
+}
+@-webkit-keyframes animateThis {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 435px;
+  }
+}
+@keyframes animateThis {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 435px;
+  }
+}
+.x-o .game-container .finis .game-over2 {
+  position: absolute;
+  height: 3px;
+  width: 534px;
+  background: #ff0047;
+  top: 49%;
+  -webkit-animation: animateThis 0.3s ease-in;
+          animation: animateThis 0.3s ease-in;
+}
+@keyframes animateThis {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 534px;
+  }
 }
 .x-o .sehv {
   width: 150px;

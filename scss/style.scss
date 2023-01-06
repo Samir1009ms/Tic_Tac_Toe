@@ -18,9 +18,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+
     .game {}
-    
+
     .user {
         width: 200px;
         height: 20px;
@@ -46,22 +46,70 @@ body {
             color: blue;
         }
 
-        .game-over{
-            position: absolute;
+        .finis {
             height: 3px;
             width: 435px;
-            background: #ff0047;
+            position: absolute;
             transform: rotate(90deg);
             top: 49%;
-            // transition: all 2s ease;
-            // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            .game-over {
+                position: absolute;
+                height: 3px;
+                width: 435px;
+                background: #ff0047;
+                // transform: rotate(90deg);
+                top: 49%;
+                // transition: all 2s ease;
+                // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                animation: animateThis 0.3s ease-in;
+                // animation-fill-mode: forwards;
+
+
+                @keyframes animateThis {
+                    from {
+                        width: 0px;
+                    }
+
+                    to {
+                        width: 435px;
+                    }
+                }
+            }
+
+            .game-over2{
+                position: absolute;
+                height: 3px;
+                width: 534px;
+                background: #ff0047;
+                // transform: rotate(90deg);
+                top: 49%;
+                // transition: all 2s ease;
+                // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                animation: animateThis 0.3s ease-in;
+                // animation-fill-mode: forwards;
+
+
+                @keyframes animateThis {
+                    from {
+                        width: 0px;
+                    }
+
+                    to {
+                        width: 534px;
+                    }
+                }
+            
+            }
         }
     }
+
     .sehv {
         width: 150px;
-    height: 20px;
+        height: 20px;
     }
-    .new{
+
+    .new {
         padding: 10px;
         background: radial-gradient(#0b76f666, #146ba0e6);
         color: #1b0055;
@@ -69,7 +117,8 @@ body {
         border-radius: 8px;
         cursor: pointer;
     }
-    .basla{
+
+    .basla {
         padding: 10px;
         background: radial-gradient(#0b76f666, #146ba0e6);
         color: #1b0055;
