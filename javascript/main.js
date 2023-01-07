@@ -59,7 +59,7 @@ function start() {
                 }
                 if (sira2 == true) {
                     qazanan = qutu[3].textContent
-                    fini2s.classList.add("game-over")
+                    finis2.classList.add("game-over")
                     finis.setAttribute("style", "left:7px;transform:rotate(0deg)")
                     sira.textContent = `oyunu qazanan,${qazanan}`
                     qutu.forEach(block2 => block2.style.pointerEvents = "none")
@@ -102,7 +102,7 @@ function start() {
                     qazanan = qutu[2].textContent
                     sira.textContent = `oyunu qazanan,${qazanan}`
                     finis2.classList.add("game-over")
-                    finis.setAttribute("style", "right:140px;top:50%")
+                    finis.setAttribute("style", "right:-145px;top:50%")
                     qutu.forEach(block2 => block2.style.pointerEvents = "none")
 
                 }

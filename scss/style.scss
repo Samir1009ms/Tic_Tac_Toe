@@ -62,16 +62,16 @@ body {
                 top: 49%;
                 // transition: all 2s ease;
                 // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-                animation: animateThis 0.3s ease-in;
+                animation: animateThis 0.6s ease-in;
                 // animation-fill-mode: forwards;
 
 
                 @keyframes animateThis {
-                    from {
+                    0% {
                         width: 0px;
                     }
 
-                    to {
+                    100% {
                         width: 435px;
                     }
                 }
@@ -86,16 +86,16 @@ body {
                 top: 49%;
                 // transition: all 2s ease;
                 // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-                animation: animateThis 0.3s ease-in;
+                animation: animateThis 0.6s ease-in;
                 // animation-fill-mode: forwards;
 
 
                 @keyframes animateThis {
-                    from {
+                    0% {
                         width: 0px;
                     }
 
-                    to {
+                    100% {
                         width: 534px;
                     }
                 }
